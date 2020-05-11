@@ -15,4 +15,12 @@ class CashRegister
     @total = @total - @total * @discount/100
     "After the discount, the total comes to $#{@total}."
   end
+  
+  def items
+  
+  end
+  
+  def void_last_transaction
+    
+  end
 end
