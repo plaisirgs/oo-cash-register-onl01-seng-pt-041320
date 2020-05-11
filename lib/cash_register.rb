@@ -12,7 +12,7 @@ class CashRegister
     quantity.times do
       @items << title
     end
-    @total += price*
+    @total += price * quantity
   end
   
   def apply_discount
@@ -22,10 +22,6 @@ class CashRegister
   else
     "After the discount, the total comes to $#{@total}."
     end
-  end
-  
-  def items
-  
   end
   
   def void_last_transaction
